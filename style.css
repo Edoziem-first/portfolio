@@ -1150,3 +1150,32 @@ body.light-mode .modal-content h2 {
 body.light-mode .modal-content p {
   color: #374151;
 }
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-name {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.brand-name span {
+  color: #3b82f6;
+}
+
+.nav-profile {
+  width: 35px;
+  height: 35px;
+
+  border-radius: 50%;
+  object-fit: cover;
+
+  border: 2px solid #3b82f6;
+
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
+
+  transition: 0.3s ease;
+}
