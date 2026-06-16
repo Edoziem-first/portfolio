@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edoziem Inc</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <h2 class="logo">Edoziem<span>Inc</span></h2>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="tagline">Web Development • Video Editing • Digital Solutions</p>
+      <h1>I Build Websites and Create Content That Helps Businesses Grow.</h1>
+      <p class="hero-text">
+        Edoziem Inc helps individuals, brands, and businesses build a strong digital presence through modern websites and engaging video content.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#portfolio" class="btn primary">View Portfolio</a>
+        <a href="#contact" class="btn secondary">Hire Us</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="about section" id="about">
+    <div class="section-title">
+      <p>About Us</p>
+      <h2>Who We Are</h2>
+    </div>
+
+    <div class="about-container">
+      <div class="about-text">
+        <h3>Edoziem Inc</h3>
+        <p>
+          Edoziem Inc is a creative digital service brand focused on helping people and businesses look professional online. I specialise in web development, video editing, and digital content solutions.
+        </p>
+        <p>
+          My goal is simple: to transform your ideas into clean, functional, and visually appealing digital experiences.
+        </p>
+      </div>
+
+      <div class="about-card">
+        <h3>What I Offer</h3>
+        <ul>
+          <li>Modern Websites</li>
+          <li>Professional Video Editing</li>
+          <li>Business Landing Pages</li>
+          <li>Portfolio Websites</li>
+          <li>Presentation & Digital Design</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="services section" id="services">
+    <div class="section-title">
+      <p>Our Services</p>
+      <h2>What We Can Do For You</h2>
+    </div>
+
+    <div class="services-container">
+      <div class="service-card">
+        <h3>Web Development</h3>
+        <p>
+          We build responsive, modern, and user-friendly websites for businesses, students, brands, and personal portfolios.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <h3>Video Editing</h3>
+        <p>
+          We edit engaging videos for YouTube, TikTok, Instagram Reels, business promotions, events, and personal brands.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <h3>Digital Solutions</h3>
+        <p>
+          We provide presentation design, CV design, branding support, and other creative services to help you stand out.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="portfolio section" id="portfolio">
+    <div class="section-title">
+      <p>Portfolio</p>
+      <h2>Selected Projects</h2>
+    </div>
+
+    <div class="portfolio-container">
+      <div class="portfolio-card"> <img src="images/PetrFlow.jpg" alt="PetroFlow OMS" class="portfolio-image" /> 
+        <h3>PetroFlow OMS</h3> 
+        <p> A complete oil station management system featuring inventory, sales, attendance, reporting, notifications, and role-based access. </p> 
+    </div>
+
+      <div class="portfolio-card">
+  <iframe
+    width="100%"
+    height="220"
+    src="https://www.youtube.com/embed/oXey_6S6Yx8?si=nsGdAThwSJBVmtS0"
+    title="Video Editing Project"
+    frameborder="0"
+    allowfullscreen>
+  </iframe>
+
+  <h3>Youtube Long Form Content</h3>
+
+  <p>
+    Long form content video edited for YouTube, including transitions, effects, and audio enhancements.
+  </p>
+
+  <div class="portfolio-links">
+    <a href="https://youtube.com/watch?v=oXey_6S6Yx8?si=nsGdAThwSJBVmtS0" target="_blank">
+      Watch on YouTube
+    </a>
+  </div>
+</div>
+
+      <div class="portfolio-card">
+        <div class="portfolio-img">Portfolio Project</div>
+        <h3>Personal Portfolio</h3>
+        <p>A clean portfolio website for showcasing skills and projects.</p>
+      </div>
+    </div>
+  </section>
+
+ <section class="contact section" id="contact">
+  <div class="section-title">
+    <p>Contact Us</p>
+    <h2>Let's Work Together</h2>
+  </div>
+
+  <div class="contact-container">
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+
+      <select id="service" required>
+        <option value="">Select Service</option>
+        <option>Web Development</option>
+        <option>Video Editing</option>
+        <option>Digital Design</option>
+      </select>
+
+      <textarea
+        id="message"
+        placeholder="Tell us about your project"
+        required
+      ></textarea>
+
+      <div class="form-buttons">
+        <button type="button" class="btn primary" onclick="sendWhatsApp()">
+          Send on WhatsApp
+        </button>
+
+        <button type="button" class="btn secondary" onclick="sendEmail()">
+          Send Email
+        </button>
+      </div>
+    </form>
+
+    <div class="contact-info">
+      <h3>Get in Touch</h3>
+      <p>Email: edoziemservices@gmail.com</p>
+      <p>WhatsApp: +234 708 246 6224</p>
+      <p>Location: Lagos, Nigeria</p>
+      <p>Available for freelance projects, collaborations, and long-term contracts.</p>
+    </div>
+  </div>
+</section>
+
+  <footer>
+    <p>© 2026 Edoziem Inc. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
