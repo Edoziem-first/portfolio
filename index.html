@@ -5,28 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Edoziem Inc</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+  <div id="loader">
+  <div class="loader-content">
+    <h2><span>Edoziem</span> Inc</h2>
+    <p>Loading digital experience...</p>
+  </div>
+</div>
+
+<div id="scrollProgress"></div>
+
+<div class="cursor"></div>
+<div class="cursor-dot"></div>
 
   <header>
     <nav class="navbar">
       <h2 class="logo">Edoziem<span>Inc</span></h2>
 
       <ul class="nav-links" id="navLinks">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#home" class="nav-link">Home</a></li>
+<li><a href="#about" class="nav-link">About</a></li>
+<li><a href="#skills" class="nav-link">Skills</a></li>
+<li><a href="#services" class="nav-link">Services</a></li>
+<li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+<li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
-
+      <button id="themeToggle">
+  🌙
+</button>
       <button class="menu-btn" onclick="toggleMenu()">☰</button>
     </nav>
   </header>
 
   <section class="hero" id="home">
+    <div class="hero-doodles"></div>
+    <div id="particles"></div>
     <div class="hero-content">
       <p class="tagline">Web Development • Video Editing • Digital Solutions</p>
+      <h2 class="typing-text">
+  I am a <span id="typing"></span>
+</h2>
       <h1>I Build Websites and Create Content That Helps Businesses Grow.</h1>
       <p class="hero-text">
         Edoziem Inc helps individuals, brands, and businesses build a strong digital presence through modern websites and engaging video content.
@@ -34,15 +56,15 @@
 
       <div class="hero-buttons">
         <a href="#portfolio" class="btn primary">View Portfolio</a>
-        <a href="#contact" class="btn secondary">Hire Us</a>
+        <a href="#contact" class="btn secondary">Hire Me</a>
       </div>
     </div>
   </section>
 
   <section class="about section" id="about">
     <div class="section-title">
-      <p>About Us</p>
-      <h2>Who We Are</h2>
+      <p>About Me</p>
+      <h2>Who I Am</h2>
     </div>
 
     <div class="about-container">
@@ -69,31 +91,129 @@
     </div>
   </section>
 
+
+<section class="stats section">
+
+  <div class="stats-container">
+
+    <div class="stat-card">
+      <h2 class="counter" data-target="10">0</h2>
+      <p>Projects Completed</p>
+    </div>
+
+    <div class="stat-card">
+      <h2 class="counter" data-target="5">0</h2>
+      <p>Happy Clients</p>
+    </div>
+
+    <div class="stat-card">
+      <h2 class="counter" data-target="2">0</h2>
+      <p>Years Learning</p>
+    </div>
+
+    <div class="stat-card">
+      <h2 class="counter" data-target="100">0</h2>
+      <p>Commitment (%)</p>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+<section class="skills section" id="skills">
+  <div class="section-title">
+    <p>My Skills</p>
+    <h2>Tools & Abilities</h2>
+  </div>
+
+  <div class="skills-container">
+    <div class="skill">
+      <div class="skill-info">
+        <span>HTML / CSS</span>
+        <span>90%</span>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-progress" data-width="90"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-info">
+        <span>JavaScript</span>
+        <span>80%</span>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-progress" data-width="80"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-info">
+        <span>Web Development</span>
+        <span>85%</span>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-progress" data-width="85"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-info">
+        <span>Video Editing</span>
+        <span>88%</span>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-progress" data-width="88"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-info">
+        <span>UI / UX Design</span>
+        <span>75%</span>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-progress" data-width="75"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
   <section class="services section" id="services">
     <div class="section-title">
-      <p>Our Services</p>
-      <h2>What We Can Do For You</h2>
+      <p>My Services</p>
+      <h2>What I Can Do For You</h2>
     </div>
 
     <div class="services-container">
-      <div class="service-card">
+      <div class="service-card animated-card">
+        <i class="fas fa-code service-icon"></i>
         <h3>Web Development</h3>
         <p>
-          We build responsive, modern, and user-friendly websites for businesses, students, brands, and personal portfolios.
+          I build responsive, modern, and user-friendly websites for businesses, students, brands, and personal portfolios.
         </p>
       </div>
 
-      <div class="service-card">
+      <div class="service-card animated-card">
+        <i class="fas fa-video service-icon"></i>
         <h3>Video Editing</h3>
         <p>
-          We edit engaging videos for YouTube, TikTok, Instagram Reels, business promotions, events, and personal brands.
+          I edit engaging videos for YouTube, TikTok, Instagram Reels, business promotions, events, and personal brands.
         </p>
       </div>
 
-      <div class="service-card">
+      <div class="service-card animated-card">
+        <i class="fas fa-palette service-icon"></i>
         <h3>Digital Solutions</h3>
         <p>
-          We provide presentation design, CV design, branding support, and other creative services to help you stand out.
+          I provide presentation design, CV design, branding support, and other creative services to help you stand out.
         </p>
       </div>
     </div>
@@ -106,7 +226,13 @@
     </div>
 
     <div class="portfolio-container">
-      <div class="portfolio-card"> <img src="images/PetrFlow.jpg" alt="PetroFlow OMS" class="portfolio-image" /> 
+      <div
+  class="portfolio-card project-card web"
+  onclick="openProjectModal(
+    'PetroFlow OMS',
+    'images/PetrFlow.jpg',
+    'A complete oil station management system featuring inventory, sales, attendance, reporting, notifications, and role-based access.')">
+        <img src="images/PetrFlow.jpg" alt="PetroFlow OMS" class="portfolio-image" /> 
         <h3>PetroFlow OMS</h3> 
         <p> A complete oil station management system featuring inventory, sales, attendance, reporting, notifications, and role-based access. </p> 
     </div>
@@ -134,17 +260,98 @@
   </div>
 </div>
 
-      <div class="portfolio-card">
-        <div class="portfolio-img">Portfolio Project</div>
-        <h3>Personal Portfolio</h3>
-        <p>A clean portfolio website for showcasing skills and projects.</p>
-      </div>
+<div class="portfolio-card"> 
+  <img src="images/PortfolioWebsite.png" alt="Portfolio Website" class="portfolio-image" /> 
+  <h3>Portfolio Website</h3> 
+  <p> A modern, responsive portfolio website built with HTML, CSS, and JavaScript. </p> 
+  <div class="portfolio-links"> 
+  <a href="https://github.com/Edoziem-first/portfolio" target="_blank"> GitHub </a> 
+  </div> 
+</div>
+
+     <div class="portfolio-card"> 
+        <img src="images/slice.png" alt="Portfolio Website" class="portfolio-image" /> 
+        <h3>"Place on the Web"</h3> 
+        <p> Your own space on the internet with a modern, responsive design. </p> 
+        <div class="portfolio-links"> 
+            <a href="https://github.com/Edoziem-first/csc412assignmentproject" target="_blank"> GitHub </a> 
+        </div> 
     </div>
+
+
+    <div class="portfolio-card">
+  <iframe
+    width="100%"
+    height="220"
+    src="https://www.youtube.com/embed/4niIXMjjGb8?si=j2syfX94A5l6Inoi"
+    title="Video Editing Project"
+    frameborder="0"
+    allowfullscreen>
+  </iframe>
+
+  <h3>Short Form Content</h3>
+
+  <p>
+    Short form content video edited for YouTube shorts, Instagram Reels, Tiktok, Snapchat including transitions, effects, and audio enhancements.
+  </p>
+
+  <div class="portfolio-links">
+    <a href="https://youtube.com/watch?v=4niIXMjjGb8?si=j2syfX94A5l6Inoi" target="_blank">
+      Watch on YouTube
+    </a>
+  </div>
+</div>
   </section>
+
+<section class="testimonials section">
+
+  <div class="section-title">
+    <p>Testimonials</p>
+    <h2>What People Say</h2>
+  </div>
+
+  <div class="testimonials-container">
+
+    <div class="testimonial-card">
+      <p>
+        "The website exceeded my expectations. Professional,
+        responsive, and delivered on time."
+      </p>
+
+      <h4>- Business Client</h4>
+    </div>
+
+    <div class="testimonial-card">
+      <p>
+        "Excellent video editing skills. The final result looked
+        clean and engaging."
+      </p>
+
+      <h4>- Content Creator</h4>
+    </div>
+
+    <div class="testimonial-card">
+      <p>
+        "Great communication and attention to detail throughout
+        the entire project."
+      </p>
+
+      <h4>- Project Collaborator</h4>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+
+
 
  <section class="contact section" id="contact">
   <div class="section-title">
-    <p>Contact Us</p>
+    <p>Contact Me</p>
     <h2>Let's Work Together</h2>
   </div>
 
@@ -177,19 +384,76 @@
       </div>
     </form>
 
-    <div class="contact-info">
-      <h3>Get in Touch</h3>
-      <p>Email: edoziemservices@gmail.com</p>
-      <p>WhatsApp: +234 708 246 6224</p>
-      <p>Location: Lagos, Nigeria</p>
-      <p>Available for freelance projects, collaborations, and long-term contracts.</p>
-    </div>
-  </div>
+    <div class="social-links">
+
+  <a href="https://wa.me/2347082466224" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <a href="https://github.com/Edoziem-first" target="_blank">
+    <i class="fab fa-github"></i>
+  </a>
+
+  <a href="https://linkedin.com/in/nnaedoziem-anike-nweze-8b984124b" target="_blank">
+    <i class="fab fa-linkedin"></i>
+  </a>
+
+  <a href="mailto:edoziemanikenweze@gmail.com">
+    <i class="fas fa-envelope"></i>
+  </a>
+
+</div>
 </section>
 
-  <footer>
+<button id="backToTop" onclick="scrollToTop()">
+  ↑
+</button>
+
+<div id="projectModal" class="project-modal">
+  <div class="modal-content">
+    <span class="close-modal" onclick="closeProjectModal()">&times;</span>
+
+    <img id="modalImage" src="" alt="Project Image">
+
+    <h2 id="modalTitle"></h2>
+
+    <p id="modalDescription"></p>
+
+    <div class="modal-links">
+      <a id="modalDemo" href="#" target="_blank">Live Demo</a>
+      <a id="modalGithub" href="#" target="_blank">GitHub</a>
+    </div>
+  </div>
+</div>
+
+  <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <h2>Edoziem Inc</h2>
+      <p>Building websites, editing videos, and creating digital solutions that help brands grow.</p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="footer-links">
+      <h3>Services</h3>
+      <a href="#services">Web Development</a>
+      <a href="#services">Video Editing</a>
+      <a href="#services">Digital Design</a>
+    </div>
+  
+  <div class="footer-bottom">
     <p>© 2026 Edoziem Inc. All rights reserved.</p>
-  </footer>
+    <p>Built by Edoziem Inc.</p>
+  </div>
+</footer>
 
   <script src="script.js"></script>
 </body>
